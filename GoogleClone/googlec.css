@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 60px;
+}
+header nav{
+    display: flex; /* AYUDA A POSICIONAR CONTENIDO */
+    justify-content: flex-end; /* JUSTIFICA EL CONTENIDO AL FINAL DEL FLEX, OSEA, HASTA EL FINAL DE LA IZQUIERDA DE LA PANTALLA*/
+}
+header nav .google-nav{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center; /* CENTRA LOS ELEMENTOS EN SU MISMO LUGAR */
+    align-items: center;
+}
+nav .google-nav a{
+    margin-right: 10px;
+    color: #000000;
+}
+nav .google-nav .icono-menu{
+    background-image: url('https://cdn2.iconfinder.com/data/icons/mobile-ui-line/50/apps-512.png'); /* USAR COMILLAS SIMPLES PARA ESTO */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* PARA QUE LA IMAGEN SE APROXIME AL TAMAÑO DEL CONTENEDOR */
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+nav .google-nav img{
+    border-radius: 50%;
+    margin-left: 10px;
+}
+main{
+    margin-top: 40px;
+    text-align: center;
+}
+main .google-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .google-logo img{
+    width: 470px;
+}
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #858585;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input{
+    width: 450px;
+    height: 35px;
+    border: none; /* Nos sirve para quitar los bordes de un input */
+    outline: none; /* Nos sirve para quitar los bordes de un input */
+}
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: rgb(104, 104, 104);
+}
+main .main-input .search-icon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png'); /* USAR COMILLAS SIMPLES PARA ESTO */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.6;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+main .main-input .micro-item{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+main .buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+main .buttons div{
+    display: inline-block;
+}
+main .buttons button{
+    height: 36px;
+    background-color: #e2e2e2;
+    border: 0px;
+    font-size: 14px;
+    color: #525252;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+main .buttons button:hover{
+    border: 1px solid #c9c9c9;
+    box-shadow: 0 1px 1px #929292;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid; /* ESTO NOS PERMITE SEPARAR */
+    grid-template-columns: 1fr 1fr; /* EL CONTENIDO EN x CANTIDAD DE COLUMNAS */
+    align-items: center;
+    background-color: #e7e7e7;
+    border-top: 1px solid #c2c2c2;
+}
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+footer .left{
+    justify-self: left; /* ENVÍA TODO EL CONTENT A LA IZQUIERDA DE LA PAGE */
+}
+footer .right{
+    justify-self: right; /* ENVÍA TODO EL CONTENT A LA DERECHA */
+}
+footer ul li a{
+    margin: 10px;
+    color:#383838;
+}
