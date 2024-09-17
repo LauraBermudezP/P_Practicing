@@ -1,0 +1,53 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+header h1 {
+    color: white;
+    text-decoration: underline;
+    margin-top: 1px;
+}
+.mi-nombre {
+    color: rgb(255, 255, 255);
+}
+body {
+	background-image: url(../photos/CMpi20.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container {
+    width: 40%;
+    height: 480px;
+    background: rgb(122, 14, 46);
+    margin: 0 auto;
+    border: 3px solid #ca6f86;
+    border-radius: 4px;
+}
+.col-a {
+	width: 60px;
+	z-index: 100;
+    float: left;
+    padding: 3px;
+}
+.black {
+    width: 66px;
+	height: 59px;
+	background: black;
+}
+.white {
+    width: 66px;
+	height: 59px;
+	background: white;
+}
+.ficha1 {
+    font-size: 50px;
+	color: rgb(162, 0, 255);
+    cursor: pointer;
+}
+.ficha2 {
+    font-size: 50px;
+	color: rgb(255, 0, 76);
+    cursor: pointer;
+}
+
